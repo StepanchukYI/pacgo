@@ -19,6 +19,8 @@ var (
 
 var player *Player
 var sprites []Sprite
+var maze []string
+var numDots int
 
 // Config holds the emoji configuration
 type Config struct {
@@ -88,9 +90,6 @@ func loadMaze() error {
 
 	return nil
 }
-
-var maze []string
-var numDots int
 
 func printScreen() {
 	simpleansi.ClearScreen()
